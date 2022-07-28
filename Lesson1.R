@@ -25,12 +25,8 @@ ui <- fluidPage(theme = shinytheme("yeti"),
 
 
 
-server <- function(input, output){
-  output$txtout <- renderText({
-    paste(input$txt1,input$txt2,sep = " *** ")
-  })
-}
+
 
 shinyApp(ui, server)
-
+ 
 
